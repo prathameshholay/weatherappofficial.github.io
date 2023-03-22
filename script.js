@@ -45,6 +45,76 @@ document.getElementById("submit").addEventListener("click", (e) => {
 
 // forecasting code >>>>>>>
 
+function fetchdelhi() {
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=delhi",
+    options
+  )
+    // console response 
+    .then((response) => response.json())
+    .then((response) => {
+      console.log("fetching successfull....showing weather of delhi");
+      console.log(response)
+      delhi_temp.innerHTML = response.temp;
+      delhi_feels_like.innerHTML = response.feels_like;
+      delhi_humidity.innerHTML = response.humidity;
+      delhi_min_temp.innerHTML = response.min_temp;
+      delhi_max_temp.innerHTML = response.max_temp;
+      delhi_wind_speed.innerHTML = response.wind_speed;
+      delhi_wind_degrees.innerHTML = response.wind_degrees;
+    })
+    .catch((err) => console.error(err));
+
+}
+
+function fetchahmadnagar() {
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=ahmadnagar",
+    options
+  )
+    // console response 
+    .then((response) => response.json())
+    .then((response) => {
+      console.log("fetching successfull....showing weather of ahmadnagar");
+      console.log(response)
+      nagar_temp.innerHTML = response.temp;
+      nagar_feels_like.innerHTML = response.feels_like;
+      nagar_humidity.innerHTML = response.humidity;
+      nagar_min_temp.innerHTML = response.min_temp;
+      nagar_max_temp.innerHTML = response.max_temp;
+      nagar_wind_speed.innerHTML = response.wind_speed;
+      nagar_wind_degrees.innerHTML = response.wind_degrees;
+    })
+    .catch((err) => console.error(err));
+
+}
+
+function fetchmumbai() {
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=mumbai",
+    options
+  )
+    // console response 
+    .then((response) => response.json())
+    .then((response) => {
+      console.log("fetching successfull....showing weather of mumbai");
+      console.log(response)
+      mumbai_temp.innerHTML = response.temp;
+      mumbai_feels_like.innerHTML = response.feels_like;
+      mumbai_humidity.innerHTML = response.humidity;
+      mumbai_min_temp.innerHTML = response.min_temp;
+      mumbai_max_temp.innerHTML = response.max_temp;
+      mumbai_wind_speed.innerHTML = response.wind_speed;
+      mumbai_wind_degrees.innerHTML = response.wind_degrees;
+    })
+    .catch((err) => console.error(err));
+
+}
+document.getElementById("fetchdelhid").addEventListener('click', (e) => {
+  fetchdelhi();
+  fetchahmadnagar();
+  fetchmumbai();
+})
 // api key = > ""
 
 

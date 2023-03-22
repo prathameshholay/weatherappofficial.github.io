@@ -140,8 +140,8 @@
         </div>
       </div>
 
-      <h2 class="display-6 text-center mb-4">Other cities weather</h2>
-
+      <h2 class="display-6 text-center mb-4">Other cities weather <span><button id="fetchdelhid">fetch</button></span>
+      </h2>
       <div class="table-responsive">
         <table class="table text-center">
           <thead>
@@ -151,8 +151,7 @@
               <th style="width: 22%">humidity</th>
               <th style="width: 22%">max_temp</th>
               <th style="width: 22%">min_temp</th>
-              <th style="width: 22%">sunrise</th>
-              <th style="width: 22%">sunset</th>
+
               <th style="width: 22%">temp</th>
               <th style="width: 22%">wind_degrees</th>
               <th style="width: 22%">wind_speed</th>
@@ -161,45 +160,36 @@
           <tbody>
             <tr>
               <th scope="row" class="text-start">Delhi</th>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td>10</td>
+              <td><span id="delhi_feels_like"></span></td>
+              <td><span id="delhi_humidity"></span></td>
+              <td><span id="delhi_max_temp"></span></td>
+              <td><span id="delhi_min_temp"></span></td>
+              <td><span id="delhi_temp"></span></td>
+              <td><span id="delhi_wind_degrees"></span></td>
+              <td><span id="delhi_wind_speed"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="text-start">Pune</th>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td>10</td>
+              <th scope="row" class="text-start">ahmadnagar</th>
+              <td><span id="nagar_feels_like"></span></td>
+              <td><span id="nagar_humidity"></span></td>
+              <td><span id="nagar_max_temp"></span></td>
+              <td><span id="nagar_min_temp"></span></td>
+              <td><span id="nagar_temp"></span></td>
+              <td><span id="nagar_wind_degrees"></span></td>
+              <td><span id="nagar_wind_speed"></span></td>
             </tr>
           </tbody>
 
           <tbody>
             <tr>
-              <th scope="row" class="text-start">Penseylvenia</th>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td>10</td>
+              <th scope="row" class="text-start">mumbai</th>
+              <td><span id="mumbai_feels_like"></span></td>
+              <td><span id="mumbai_humidity"></span></td>
+              <td><span id="mumbai_max_temp"></span></td>
+              <td><span id="mumbai_min_temp"></span></td>
+              <td><span id="mumbai_temp"></span></td>
+              <td><span id="mumbai_wind_degrees"></span></td>
+              <td><span id="mumbai_wind_speed"></span></td>
             </tr>
             <tr>
               <th scope="row" class="text-start">Shanghai</th>
