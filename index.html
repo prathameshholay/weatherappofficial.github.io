@@ -27,7 +27,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About this app</a>
+            <a class="nav-link" href="/about.html">About this app</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -140,7 +140,8 @@
         </div>
       </div>
 
-      <h2 class="display-6 text-center mb-4">Other cities weather <span><button id="fetchdelhid">fetch</button></span>
+      <h2 class="display-6 text-center mb-4">Other cities weather <span><button class="btn btn-outline-success"
+            id="fetchdelhid">fetch</button></span>
       </h2>
       <div class="table-responsive">
         <table class="table text-center">
@@ -161,22 +162,22 @@
             <tr>
               <th scope="row" class="text-start">Delhi</th>
               <td><span id="delhi_feels_like"></span></td>
-              <td><span id="delhi_humidity"></span></td>
-              <td><span id="delhi_max_temp"></span></td>
-              <td><span id="delhi_min_temp"></span></td>
-              <td><span id="delhi_temp"></span></td>
-              <td><span id="delhi_wind_degrees"></span></td>
-              <td><span id="delhi_wind_speed"></span></td>
+              <td><span id="delhi_humidity"></span>%</td>
+              <td><span id="delhi_max_temp"></span>°C</td>
+              <td><span id="delhi_min_temp"></span>°C</td>
+              <td><span id="delhi_temp"></span>°C</td>
+              <td><span id="delhi_wind_degrees"></span>°</td>
+              <td><span id="delhi_wind_speed"></span>°</td>
             </tr>
             <tr>
               <th scope="row" class="text-start">ahmadnagar</th>
               <td><span id="nagar_feels_like"></span></td>
-              <td><span id="nagar_humidity"></span></td>
-              <td><span id="nagar_max_temp"></span></td>
-              <td><span id="nagar_min_temp"></span></td>
-              <td><span id="nagar_temp"></span></td>
-              <td><span id="nagar_wind_degrees"></span></td>
-              <td><span id="nagar_wind_speed"></span></td>
+              <td><span id="nagar_humidity"></span>%</td>
+              <td><span id="nagar_max_temp"></span>°C</td>
+              <td><span id="nagar_min_temp"></span>°C</td>
+              <td><span id="nagar_temp"></span>°C</td>
+              <td><span id="nagar_wind_degrees"></span>°</td>
+              <td><span id="nagar_wind_speed"></span>°</td>
             </tr>
           </tbody>
 
@@ -184,12 +185,68 @@
             <tr>
               <th scope="row" class="text-start">mumbai</th>
               <td><span id="mumbai_feels_like"></span></td>
-              <td><span id="mumbai_humidity"></span></td>
-              <td><span id="mumbai_max_temp"></span></td>
-              <td><span id="mumbai_min_temp"></span></td>
-              <td><span id="mumbai_temp"></span></td>
-              <td><span id="mumbai_wind_degrees"></span></td>
-              <td><span id="mumbai_wind_speed"></span></td>
+              <td><span id="mumbai_humidity"></span>%</td>
+              <td><span id="mumbai_max_temp"></span>°C</td>
+              <td><span id="mumbai_min_temp"></span>°C</td>
+              <td><span id="mumbai_temp"></span>°C</td>
+              <td><span id="mumbai_wind_degrees"></span>°</td>
+              <td><span id="mumbai_wind_speed"></span>°</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="display-6 text-center mb-4">Other cities weather <span><button class="btn btn-outline-success"
+            id="fetchforecast">forecast</button></span>
+      </h2>
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 32%"></th>
+              <th style="width: 22%">Monday</th>
+              <th style="width: 22%">Tuesday</th>
+              <th style="width: 22%">Wednesday</th>
+              <th style="width: 22%">Thusday</th>
+              <th style="width: 22%">Firday</th>
+              <th style="width: 22%">Saturday</th>
+              <th style="width: 22%">Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Delhi</th>
+              <td><span id=""></span></td>
+              <td><span id=""></span>%</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°</td>
+              <td><span id=""></span>°</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">ahmadnagar</th>
+              <td><span id=""></span></td>
+              <td><span id=""></span>%</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°</td>
+              <td><span id=""></span>°</td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">mumbai</th>
+              <td><span id=""></span></td>
+              <td><span id=""></span>%</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°C</td>
+              <td><span id=""></span>°</td>
+              <td><span id=""></span>°</td>
             </tr>
             <tr>
               <th scope="row" class="text-start">Shanghai</th>
@@ -205,33 +262,11 @@
                 </svg>
               </td>
             </tr>
-            <tr>
-              <th scope="row" class="text-start">Kolkatta</th>
-              <td></td>
-              <td>
-                <svg class="bi" width="24" height="24">
-                  <use xlink:href="#check"></use>
-                </svg>
-              </td>
-              <td>
-                <svg class="bi" width="24" height="24">
-                  <use xlink:href="#check"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row" class="text-start">Los Angeles</th>
-              <td></td>
-              <td></td>
-              <td>
-                <svg class="bi" width="24" height="24">
-                  <use xlink:href="#check"></use>
-                </svg>
-              </td>
-            </tr>
+
           </tbody>
         </table>
       </div>
+
     </main>
   </div>
   <script defer src="./script.js"></script>

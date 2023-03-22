@@ -56,7 +56,7 @@ function fetchdelhi() {
       console.log("fetching successfull....showing weather of delhi");
       console.log(response)
       delhi_temp.innerHTML = response.temp;
-      delhi_feels_like.innerHTML = response.feels_like;
+      delhi_feels_like.innerHTML = response.feels_like + 2;
       delhi_humidity.innerHTML = response.humidity;
       delhi_min_temp.innerHTML = response.min_temp;
       delhi_max_temp.innerHTML = response.max_temp;
