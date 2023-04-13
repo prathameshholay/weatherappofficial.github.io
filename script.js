@@ -115,6 +115,6 @@ document.getElementById("fetchdelhid").addEventListener('click', (e) => {
   fetchahmadnagar();
   fetchmumbai();
 })
-// api key = > ""
+
 
 

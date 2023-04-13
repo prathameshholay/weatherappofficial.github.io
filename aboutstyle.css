@@ -1,0 +1,20 @@
+body {
+    color: rgb(233, 228, 229);
+    background-color: rgb(40, 40, 43)
+}
+
+h1 {
+    color: whitesmoke;
+    position: relative;
+    width: 40%;
+}
+
+.email {
+    top: 50px;
+    color: black;
+    position: relative;
+    justify-content: baseline;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(143, 142, 141);
+}
